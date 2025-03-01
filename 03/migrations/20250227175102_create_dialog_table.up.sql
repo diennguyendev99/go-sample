@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS dialog (
+    id BIGSERIAL PRIMARY KEY,
+    lang VARCHAR(2) NOT NULL,
+    content TEXT NOT NULL
+);

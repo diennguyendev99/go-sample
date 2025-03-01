@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;       
+    line-height: 1.6;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #212121;
+    font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+    font-variation-settings: normal;
+}
+
+.container {
+    margin: auto;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 48rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 48rem;
+    }
+}
+
+.box-main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#message-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-top: 3rem;
+}
+
+.message-question-container {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 3rem;
+}
+
+.message-question {
+    max-width: 70%;
+    background-color: #303030;
+    padding: 14px 16px;
+    border-radius: 24px;
+}
+
+.message-reply-container {
+    margin-bottom: 3rem;
+}
+
+.message-reply {
+}
+
+.message-reply pre {
+    background: #0d0d0d;
+    border-radius: 1.5rem;
+}
+
+.prompt-container {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#prompt-form {
+    border-radius: 1.5rem;
+
+    background-color: #303030;
+}
+
+#prompt-form textarea {
+    width: 96%;
+    background-color: transparent;
+    padding-left: 1.3rem;
+    padding-top: 1rem;
+    height: 6rem;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    resize: none;
+    overflow: hidden;
+}
+
+#prompt-form textarea:focus-visible {
+    border: none;
+    outline: none
+}
+
+.btn {
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+}
+
+#timer {
+    position: absolute;
+    font-size: 2rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+}
+
+#btn-auto {
+    border-color: red;
+    color: red;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #424242;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #676767;
+}
+
+
+/* ==================== */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1em; }
+
+p, blockquote, ul, ol, dl, table, pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
+}
+
+pre {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+}
+
+pre code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    background-color: transparent;
+}
+
+blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+}
+
+table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table th {
+    font-weight: 600;
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+table tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+.boxed {
+    border: 1px solid #000;
+    padding: 3px 5px;
+    display: inline-block;
+    margin: 0 2px;
+    background-color: #f8f8f8;
+}
+
+.math.inline {
+    display: inline;
+}
+
+.math.display {
+    display: block;
+    margin: 1em 0;
+}

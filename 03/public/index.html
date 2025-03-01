@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script id="MathJax-script" async src="../static/mathjax.js"></script>
+    <script type="module" src="../static/app.js"></script>
+</head>
+
+<body>
+    <div class="box-main">
+        <div id="message-container"></div>
+        <div class="prompt-container">
+            <input id="btn-auto" class="btn" type="button" value="Bắt đầu">
+        </div>
+    </div>
+
+    <div id="timer" style="display: none;">
+        <span>00:00:00</span>
+    </div>
+
+    <div id="loader-container" style="display: none;">
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        function handleBlockEnter(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                document.getElementById('btn-submit').click();
+            }
+        }
+
+        function autoResize(event) {
+            const textarea = event.target;
+
+            if (textarea.clientHeight < textarea.scrollHeight) {
+                textarea.style.height = 'auto';
+                textarea.style.height = textarea.scrollHeight + 'px';
+
+                const maxHeight = 320;
+
+                if (textarea.scrollHeight > maxHeight) {
+                    textarea.style.height = maxHeight + 'px';
+                    textarea.style.overflowY = 'auto';
+                } else {
+                    textarea.style.overflowY = 'hidden';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
